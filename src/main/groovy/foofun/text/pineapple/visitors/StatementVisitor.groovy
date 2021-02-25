@@ -8,7 +8,13 @@ import foofun.text.pineapple.structures.Print
  */
 interface StatementVisitor {
 
+    /**
+     * 执行print语句
+     */
     void execute(Print print)
 
+    /**
+     * 执行赋值语句
+     */
     void execute(Assignment assignment)
 }
